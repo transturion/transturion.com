@@ -1,0 +1,63 @@
+/* https://stackoverflow.com/questions/63534558/css-only-sticky-header-with-background-color-transition-when-scrolling-but-no-js */
+/* https://www.w3schools.com/css/css_boxmodel.asp */
+/* https://stackoverflow.com/questions/7868775/how-to-make-a-transparent-sticky-header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    min-height: 2vw;
+    min-width: 100vw;
+    backdrop-filter: blur(12px);
+    background-color: rgba(black, .2) !important;
+}
+
+/* Navigation */
+/* https://codepen.io/toddmoore/pen/JGvVpB */
+
+nav {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 0.2em 2em;
+    text-decoration: none;
+}
+
+/* https://stackoverflow.com/questions/42306417/how-do-i-center-header-text-in-the-middle-of-the-navigation-menu-in-html */
+.font_header {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(10%, -50%);
+}
+
+.font_logo {
+    font-family: Copperplate;
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}

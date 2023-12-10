@@ -1,0 +1,17 @@
+.DS_Store
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*test*
+*.bbl
+*.blg
+.Nova
+*.swp
+*(busy)
+*.cpgz
+.jekyll-cache
+_site
+Gemfile.lock
