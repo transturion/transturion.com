@@ -1,10 +1,6 @@
 /* https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/assets/style.scss?ref_type=heads */
 /* https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 92px;
-
-}
+/* check contrast using https://webaim.org/resources/contrastchecker/ */
 
 body {
     overflow-y: scroll;
@@ -18,26 +14,43 @@ body {
 
 
 /* current page highlight */
-.current {
-    color: #672F8B;
+.tab_highlight {
+    color: #F096AA;
     }
 
 /* content tabbing */
 .lefttab {
-    position: absolute;
+    position: relative;
+    margin: 0;
     width: 65vw;
+    margin-bottom: -2em;
 }
 
 .righttab {
-    position: absolute;
+    position: relative;
     width: 35vw;
     padding-left: 2em;
 }
 
 .content {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 10%;
     padding: 2em;
-    margin-top: 2em;
+}
+
+.container {
+    border: 2px solid blueviolet;
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    color: blueviolet;
+}
+
+.container-raised {
+    /* x-axis | y-axis | blur-radius | spread-radius | shadow color */
+    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+}
+
+.tspurple {
+    color: #672F8B;
 }

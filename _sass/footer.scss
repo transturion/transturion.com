@@ -1,10 +1,16 @@
+/* https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh */
+
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
-    text-align: center;
-    backdrop-filter: blur(12px);
-    background-color: rgba(black, .2) !important;
+    /* border-top: 2px solid #672F8B;
+    background-color: rgba(black, .7); */
+    background-image: repeating-linear-gradient(358deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(280deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(337deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),linear-gradient(90deg, rgb(78,194,248),rgb(240,150,170));
+    color: #86B695;    /* genderfae green */
+    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
 }

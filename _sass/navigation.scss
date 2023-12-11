@@ -3,15 +3,19 @@
 /* https://stackoverflow.com/questions/7868775/how-to-make-a-transparent-sticky-header */
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     margin: 0;
     padding: 1rem;
-    min-height: 2vw;
+    min-height: 4vw;
     min-width: 100vw;
+
+    /* https://www.gradientmagic.com/collection/confetti/gradient/1600773744886
     backdrop-filter: blur(12px);
-    background-color: rgba(black, .2) !important;
+    background-color: rgba(black, .2) !important; */
+    background-image: repeating-linear-gradient(358deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(280deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(337deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),linear-gradient(90deg, rgb(240,150,170),rgb(78,194,248));
+    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
 }
 
 /* Navigation */
@@ -51,6 +55,11 @@ nav > ul > li > a {
     transform: translate(10%, -50%);
 }
 
+.genderfae_green_border {
+    border: solid;
+    border-color: #86B695;
+}
+
 .font_logo {
     font-family: Copperplate;
     font-weight: bold;
@@ -60,4 +69,5 @@ nav > ul > li > a {
     top: 50%;
     left: 10%;
     transform: translate(-50%, -50%);
+    color: silver;
 }
