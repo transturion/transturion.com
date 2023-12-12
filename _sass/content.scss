@@ -10,14 +10,6 @@ body {
     min-height: 100vh;*/
 }
 
-/* content */
-
-
-/* current page highlight */
-.tab_highlight {
-    color: #F096AA;
-    }
-
 /* content tabbing */
 .lefttab {
     position: relative;
@@ -32,6 +24,7 @@ body {
     padding-left: 2em;
 }
 
+/* content */
 .content {
     position: relative;
     top: 50%;
@@ -51,6 +44,51 @@ body {
     box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
 }
 
-.tspurple {
+/* define a few pride colors */
+
+.transprideblue {
+    color: #4EC2F8;
+}
+
+.transpridepink {
+    color: #4EC2F8;
+}
+
+.genderfaegreendark {
+    color: #86B695;
+}
+
+.genderfaegreenlight {
+    color: #B7D89F;
+}
+
+.genderfaeyellow {
+    color: #F8FDC4;
+}
+
+.tspurplelight {
+    color: #9561A8;
+}
+
+.tspurpledark {
     color: #672F8B;
 }
+
+/* link colors */
+a {
+  color: #672F8B;
+}
+
+a:hover {
+  color: #F096AA;
+}
+
+/* current tab highlight */
+.link_highlight_active {
+    color: #F096AA;
+    }
+
+/* inactive tabs */
+.link_highlight_inactive {
+    color: #4EC2F8;
+    }

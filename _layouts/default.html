@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Transturion | {{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
@@ -13,7 +14,7 @@
                 <nav><ul>
                     {% for item in site.data.navigation %}
                     <!---<li class="genderfae_green_border"><a href="{{ item.link }}" {% if page.url == item.link %} class="tab_highlight" {% endif %}>{{ item.name }}</a></li>--->
-                    <li><a href="{{ item.link }}" {% if page.url == item.link %} class="tab_highlight" {% endif %}>{{ item.name }}</a></li>
+                    <li><a href="{{ item.link }}" {% if page.url == item.link %} class="link_highlight_active" {% else %} class="link_highlight_inactive" {% endif %}>{{ item.name }}</a></li>
                     {% endfor %}
                 </ul></nav>
             </div>

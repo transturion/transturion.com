@@ -1,9 +1,0 @@
-<div class="font_logo">Transturion</div>
-<div class="font_header">
-    <nav><ul>
-    {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="tab_highlight"{% endif %}>{{ item.name }}</a></li>
-    {% endfor %}
-    </ul></nav>
-</div>
-

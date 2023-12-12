@@ -2,10 +2,9 @@
 layout: default
 ---
 <div class="content">
-    <h1 class="tspurple">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
     <p>
-        {{ page.date | date_to_string }}
-        {% assign type = site.types | where: 'type', page.type | first %}
+        {{ page.date | date_to_string }} | Category {% assign type = site.types | where: 'type', page.type | first %}
         {% if type %}
         - <a href="{{ type.url }}">{{ type.type }}</a>
         {% endif %}
