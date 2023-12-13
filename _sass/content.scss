@@ -49,6 +49,13 @@ body {
     border-radius: 24px;
 }
 
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .content, .card {
+        margin: 1rem;
+    }
+}
+
 /* define a few pride colors */
 
 .transprideblue {
