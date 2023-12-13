@@ -38,16 +38,11 @@ body {
 
 /* content */
 .content {
-    margin-left: 8rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 4rem;
 }
 
 .card {
-    margin-left: 2rem;
-    margin-right: 4rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 2rem;
     backdrop-filter: blur(12px);
     background-color: rgba(black, .1) !important;
     padding: 1rem;
