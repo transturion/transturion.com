@@ -3,6 +3,7 @@
 .footer {
     padding: 1rem 1rem;
     overflow: hidden;
+    position: relative;
 
     background-image: repeating-linear-gradient(358deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(280deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),repeating-linear-gradient(337deg, rgb(30,30,40) 0px, rgb(30,30,40) 27px,transparent 27px, transparent 29px),linear-gradient(90deg, rgb(78,194,248),rgb(240,150,170));
     color: #86B695;    /* genderfae green */

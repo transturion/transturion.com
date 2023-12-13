@@ -10,38 +10,48 @@ body {
     min-height: 100vh;*/
 }
 
-/* content tabbing */
-.lefttab {
-    position: relative;
-    margin: 0;
-    width: 65vw;
-    margin-bottom: -2em;
+/* two-column layout */
+.leftcolumn {
+    float: left;
+    width: 75%;
 }
 
-.righttab {
-    position: relative;
-    width: 35vw;
-    padding-left: 2em;
+.rightcolumn {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 /* content */
 .content {
-    position: relative;
-    top: 50%;
-    left: 10%;
-    padding: 2em;
+    margin-left: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-.container {
-    border: 2px solid blueviolet;
-    background-color: #f9f9f9;
-    border-radius: 7px;
-    color: blueviolet;
-}
-
-.container-raised {
-    /* x-axis | y-axis | blur-radius | spread-radius | shadow color */
-    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+.card {
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    backdrop-filter: blur(12px);
+    background-color: rgba(black, .1) !important;
+    padding: 1rem;
+    border-radius: 24px;
 }
 
 /* define a few pride colors */
@@ -93,3 +103,4 @@ a:hover {
 .link_highlight_inactive {
     color: #4EC2F8;
     }
+
