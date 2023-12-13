@@ -10,7 +10,7 @@
     <body>
         <div class="header">
             <a class="logo" href="index.html">Transturion</a>
-            <div class="header-right">
+            <div class="navbar_tab">
                 {% for item in site.data.navigation %}
                     <a href="{{ item.link }}" {% if page.url == item.link %} class="active" {% else %} class="inactive" {% endif %}>{{ item.name }}</a>
                 {% endfor %}

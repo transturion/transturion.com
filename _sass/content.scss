@@ -77,18 +77,19 @@ body {
 /* link colors */
 a {
   color: #672F8B;
+  text-decoration: none;
 }
 
 a:hover {
   color: #F096AA;
 }
 
-/* current tab highlight */
+/* current link highlight */
 .link_highlight_active {
     color: #F096AA;
     }
 
-/* inactive tabs */
+/* inactive links */
 .link_highlight_inactive {
     color: #4EC2F8;
     }
