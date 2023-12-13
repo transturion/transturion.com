@@ -9,14 +9,11 @@
 
     <body>
         <div class="header">
-            <div class="font_logo">Transturion</div>
-            <div class="font_header">
-                <nav><ul>
-                    {% for item in site.data.navigation %}
-                    <!---<li class="genderfae_green_border"><a href="{{ item.link }}" {% if page.url == item.link %} class="tab_highlight" {% endif %}>{{ item.name }}</a></li>--->
-                    <li><a href="{{ item.link }}" {% if page.url == item.link %} class="link_highlight_active" {% else %} class="link_highlight_inactive" {% endif %}>{{ item.name }}</a></li>
-                    {% endfor %}
-                </ul></nav>
+            <a class="logo" href="index.html">Transturion</a>
+            <div class="header-right">
+                {% for item in site.data.navigation %}
+                    <a href="{{ item.link }}" {% if page.url == item.link %} class="active" {% else %} class="inactive" {% endif %}>{{ item.name }}</a>
+                {% endfor %}
             </div>
         </div>
         <div class="gradient_magic">

@@ -3,13 +3,8 @@
 /* https://stackoverflow.com/questions/7868775/how-to-make-a-transparent-sticky-header */
 
 .header {
-    position: relative;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    min-height: 4vw;
-    min-width: 100vw;
+    padding: 1rem 0.5rem;
+    overflow: hidden;
 
     /* https://www.gradientmagic.com/collection/confetti/gradient/1600773744886
     backdrop-filter: blur(12px);
@@ -19,55 +14,60 @@
 }
 
 /* Navigation */
-/* https://codepen.io/toddmoore/pen/JGvVpB */
+/* https://www.w3schools.com/howto/howto_css_responsive_header.asp */
 
-nav {
+.header a {
     float: left;
-    margin: 0;
-    overflow: hidden;
+    color: #4EC2F8;
     text-align: center;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav > ul > li > a {
-    display: block;
-    padding: 0.2em 2em;
+    padding: 12px;
     text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
-/* https://stackoverflow.com/questions/42306417/how-do-i-center-header-text-in-the-middle-of-the-navigation-menu-in-html */
-.font_header {
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Copperplate;
+    color: silver;
+}
+
+.header a:hover {
+    background-color: #1E1E28;
+    color: #F096AA;
+}
+
+.header a.active {
+  background-color: #1E1E28;
+  color: #F096AA;
+}
+
+.header a.inactive {
+  background-color: #1E1E28;
+  color: #4EC2F8;
+}
+
+.header-right {
+    background-color: #1E1E28;
     font-family: monospace;
     font-weight: bold;
-    font-size: 1.5em;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(10%, -50%);
-}
-
-.genderfae_green_border {
-    border: solid;
-    border-color: #86B695;
-}
-
-.font_logo {
-    font-family: Copperplate;
-    font-weight: bold;
-    font-size: 2em;
     float: left;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+}
+
+.logo {
+    font-family: Copperplate;
     color: silver;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar_tab {
+        float: none;
+    }
 }
