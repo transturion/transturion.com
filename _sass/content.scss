@@ -41,13 +41,28 @@ body {
     margin: 4rem;
 }
 
-.card {
+.card1 {
     margin: 2rem;
     backdrop-filter: blur(12px);
-    background-color: rgba(black, .1) !important;
+    /*background-color: rgba(black, .1) !important;*/
     padding: 1rem;
+
+    /* https://alvarotrigo.com/shadow-gradients/ */
+    background: linear-gradient(-45deg, #4EC2F8 0%, #F096AA 100%);
     border-radius: 24px;
 }
+
+.card2 {
+    margin: 2rem;
+    backdrop-filter: blur(12px);
+    /*background-color: rgba(black, .1) !important;*/
+    padding: 1rem;
+
+    /* https://alvarotrigo.com/shadow-gradients/ */
+    background: linear-gradient(-225deg, #4EC2F8 0%, #F096AA 100%);
+    border-radius: 24px;
+}
+
 
 /* Responsive layout */
 @media screen and (max-width: 800px) {
